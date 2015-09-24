@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="">
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+            @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+            body {
+                overflow-x: hidden;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+            .navbar-default {
+                background: rgba(0, 0, 0, 0.5);
+                border-color: transparent;
+            }
+            .navbar-default .navbar-nav>li>a {
+                color: white;
+            }
+            .navbar-default .navbar-nav>li>a:hover {
+                color: white;
+                box-shadow: inset 0px -3px 0px #3498db;
+            }
+            .navbar-default .navbar-nav>li>a:visited {
+                color: white;
+            }
+            .navbar-default .navbar-nav>li>a:foucs {
+                color: white;
+            }
+            .navbar-default .navbar-nav>li>a:active {
+                color: white;
+            }
+            .top {
+                background: url('https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&fm=jpg&s=b154bdf22a4885c8e2dd1b845c5fe996');
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            .relative {
+                position: relative;
+            }
+            .absolute {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .top .row .col-md-12 h1{
+                font-size: 128px;
+                font-weight: 300;
+                color: white;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .top .row .col-md-12 p{
+                font-size: 32px;
+                font-weight: 300;
+                color: white;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .top .row .col-md-12 .bar{
+                font-size: 24px;
+                font-weight: 300;
+                color: white;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                border: 3px solid white;
+                border-radius: 99px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 34px;
+                padding: 6px;
+                max-width: 194px;
+            }
+            .top .row .col-md-12 .bar:hover{
+                background: white;
+                text-decoration: none;
+                color: #333;
+                cursor: pointer;
+            }
+            .bottom {
+                font-size:  14px !important;
+                padding-top: 108px;
+            }
+            .us {
+                height: auto;
+                width: 100vw;
+                background: white;
+                text-align: center;
+            }
+            .us .team {
+                margin-top: 108px;
+            }
+            .us .team .row {
+                width: 75vw;
+                margin: 0 auto;
+            }
+            .xtb {
+                margin-top: 108px;
+                margin-bottom: 108px;
+            }
+            .tb {
+                padding-top: 108px;
+                padding-bottom: 108px;
+            }
+            .us .text {
+                font-size: 18px;
+            }
+            .us .team img {
+                width: 128px;
+                height: 128px;
+                border: 5px solid #EEE;
+                border-radius: 100%;
+            }
+            .help {
+                height: auto;
+                width: 100vw;
+                background: #EEE;
+                text-align: center;
+            }
+            .help ul {
+                margin: 0 auto;
+                width: 50vw;
+                margin-top: 108px;
+                list-style-type: decimal;
+                padding: 54px;
+                border: 1px solid #333;
+                border-radius: 24px;
+            }
+            .help ul li {
+                font-size: 18px;
+                text-align: left;
+            }
+            .help .text {
+                font-size: 18px;
+            }
+            .liFix {
+                padding-bottom: 27px;
+            }
+            .support {
+                height: auto;
+                width: 100vw;
+                background: white;
+                text-align: center;
+            }
+            .support .supportContent {
+                margin: 0 auto;
+                width: 50vw;
+                margin-top: 108px;
+                list-style-type: decimal;
+                padding: 54px;
+                border: 1px solid #333;
+                border-radius: 24px;
+                text-align: left;
+            }
+            .support .text {
+                font-size: 18px;
+            }
+            .support .supportContent p {
+                font-size: 18px;
+            }
+            .cr {
+                height: 54px;
+                width: 100vw;
+                background: #333;
+                color: white;
+            }
+            .cr p {
+                padding: 13px;
+                margin: 0;
+            }
+            .cr p span {
+                padding-right: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="http://i.imgur.com/PF0wbrf.png" height="21px">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#us">Us</a></li>
+                        <li><a href="#help">Install</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="top relative">
+            <div class="row absolute">
+                <div class="col-md-12">
+                    <h1>DubX</h1>
+                    <p>Click and drag the box below in to the bookmarks bar to install. It's that simple.</p>
+                    <a class="bar" href="javascript:(function(){$.getScript('https://rawgit.com/sinfulBA/DubX-Script/master/beta.js');}());">DubX</a>
+                    <p class="bottom">Scroll to Explore</p>
+                </div>
+            </div>
+        </div>
+        <div class="us mtb" id="us">
+            <div class="tb">
+                <div class="title">
+                    <h1>Us</h1>
+                </div>
+                <div class="text">
+                    <p>We are a team of passionate developers who are proud of our extension.</p>
+                </div>
+                <div class="team">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img alt="..." src="http://i.imgur.com/0PD0CAN.jpg" width="128px" height="128px">
+                            <h2>Brett Weisberg</h2>
+                            <p>Developer and Coordinator</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img alt="..." src="https://31.media.tumblr.com/avatar_067a5b6da79d_128.png">
+                            <h2>Lachlan Edwards</h2>
+                            <p>Developer and Designer</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img alt="..." src="https://31.media.tumblr.com/avatar_067a5b6da79d_128.png">
+                            <h2>Jeremy Bader</h2>
+                            <p>Lead Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="help mtb" id="help">
+            <div class="tb">
+                <div class="title">
+                    <h1>Install</h1>
+                </div>
+                <div class="text">
+                    <p>Installing our extensions is easier than slapping a stranger.</p>
+                </div>
+                <ul>
+                    <li class="liFix">Grab our old friend <a href="javascript:(function(){$.getScript('https://rawgit.com/sinfulBA/DubX-Script/master/beta.js');}());">DubX</a> bookmarlet here and drag it to the bookmarks bar.</li>
+                    <li class="liFix">Go to <a href="https://dubtrack.fm/">Dubtrack.fm</a>.</li>
+                    <li>Click on the DubX bookmark and you're done! In record time too.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="support mtb" id="support">
+            <div class="tb">
+                 <div class="title">
+                    <h1>Support</h1>
+                </div>
+                <div class="text">
+                    <p>You will be able to rock with our extension running.</p>
+                </div>
+                <div class="supportContent">
+                    <p class="liFix">Once you install our extension you will get access to:</p>
+                    <ul>
+                        <li class="liFix">
+                            <p>Autovote:</p>
+                            <p>Will click the UPDUB button automatically whenever the song changes.</p>
+                        </li>
+                        <li class="liFix">
+                            <p>Fullscreen:</p>
+                            <p>We don't all fancy backgrounds. Fullscreen will make the video and chat cover the entire window.</p>
+                        </li>
+                        <li class="liFix">
+                            <p>Workmode:</p>
+                            <p>For when you want to listen to music at work without upsetting the boss man. Workmode will hide the video and chat.</p>
+                        </li>
+                        <li>
+                            <p>Other features:</p>
+                            <p>We have a few features disabled at the moment because we're waiting for Dubtrack to release their documented API.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cr">
+            <p><span><img src="http://i.imgur.com/3Rs3RCe.png" alt="" height="27px"></span>All Rights Reserved</p>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
+</html>
