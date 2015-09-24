@@ -55,15 +55,14 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            .top .row .col-md-12 h1{
-                font-size: 128px;
-                font-weight: 300;
-                color: white;
-                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;;
-                font-weight: 700;
-                text-transform: uppercase;
+            .top .row .col-md-12 img{
+                margin: 0 auto;
+                display: block;
+                filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.5));
+                -webkit-filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.5));
+                -ms-filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.5));
+                -o-filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.5));
+                -moz-filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.5));
             }
             .top .row .col-md-12 p{
                 font-size: 32px;
@@ -217,7 +216,7 @@
         <div class="top relative">
             <div class="row absolute">
                 <div class="col-md-12">
-                    <h1>DubX</h1>
+                    <img src="http://i.imgur.com/3Rs3RCe.png" alt="" height="128px">
                     <p>Click and drag the box below in to the bookmarks bar to install. It's that simple.</p>
                     <a class="bar" href="javascript:(function(){$.getScript('https://rawgit.com/sinfulBA/DubX-Script/master/beta.js');}());">DubX</a>
                     <p class="bottom">Scroll to Explore</p>
