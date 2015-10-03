@@ -28,7 +28,7 @@
             .nav.navbar-nav li {
                 float: none;
                 display: inline-block;
-            }
+=            }
             .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
                 background: transparent;
                 box-shadow: inset 0px -3px 0px #3498db;
@@ -89,33 +89,11 @@
                 padding: 12px 27px 12px 27px;
                 border-radius: 99px;
             }
-            .link {
-                font-weight: 700;
-                font-family: 'Montserrat', sans-serif; 
-                text-transform: uppercase;
-                font-size: 24px;
-                color: inherit;
-                border: 3px solid #1c1c1c;
-                padding: 12px 27px 12px 27px;
-                border-radius: 99px;
-                margin-top: 27px;
-                display: block;
-                width: 314px;
-            }
             .help .bottom .context .contextContent a:focus, .bottom .context .p a:visited, .bottom .context .p a:active {
                 text-decoration: none;
                 color: #1c1c1c;
             }
             .help .bottom .context .contextContent a:hover {
-                text-decoration: none;
-                color: #EF3E36;
-                border: 3px solid #EF3E36;
-            }
-            .link:focus, .link:visited, .link:active {
-                text-decoration: none;
-                color: #1c1c1c;
-            }
-            .link:hover {
                 text-decoration: none;
                 color: #EF3E36;
                 border: 3px solid #EF3E36;
@@ -215,12 +193,36 @@
                 background-image: url('http://i.imgur.com/3I4iG0I.png');
                 background-size: 14px 14px;
             }
-            .isSwordful {
-                padding: 27px 0 27px 0;
+            .form-control {
+                border: 1px solid #5fbff9;
+                border-radius: 0;
+                box-shadow: none;
+                max-width: 100%;
             }
-            .ChromeStore {
-                width: 206px;
-                height: 58px;
+            .form-control:focus {
+                border: 1px solid #Ef3e36;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .btn {
+                color: #1c1c1c;
+                background-color: white;
+                border-radius: 99px;
+                border: 1px solid #5fbff9;
+                width: 108px;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+            .btn:hover {
+                border: 1px solid #Ef3e36;
+                background-color: white;
+            }
+            .form-group label {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                color: #1c1c1c;
             }
         </style>
     </head>
@@ -240,11 +242,11 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Hello World <span class="sr-only">(current)</span></a></li>
-                    <li><a href="beta.html">Beta</a></li>
+                    <li><a href="index.html">Hello World</a></li>
+                    <li><a href="beta.html">Beta <span class="sr-only">(current)</span></a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="https://github.com/sinfulBA/DubX-Script">Readme</a></li>
-                    <li><a href="donate.html">Donate</a></li>
+                    <li class="active"><a href="donate.html">Donate <span class="sr-only">(current)</span></a></li>
                     <li><a href="https://github.com/sinfulBA/DubX-Script">Docs</a></li>
                 </ul>
             </div>
@@ -269,7 +271,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="contextContent">
-                                    <a href="javascript:(function(){$.getScript('https://rawgit.com/sinfulBA/DubX-Script/master/beta.js');}());">DubX Bookmarklet</a>
+                                    <a href="">DubX Bookmarklet</a>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +284,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="contextContent">
-                                    <h1>Install</h1>
+                                    <h1>Donate</h1>
                                 </div>
                             </div>
                         </div>
@@ -293,74 +295,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="contextContent">
-                                    <p>You can install our extension on Chrome, Safari, Opera and Microsoft Edge. Firefox is now supported. You can also use out User.JS extension or the Chrome Store to install and our extension will auto-run in the browser whenver Dubtrack is visited.</p>
-                                    <div class="isSwordful">
-                                        <a class="ChromeStore" href="https://chrome.google.com/webstore/detail/dubx/oceofndagjnpebjmknefoelcpcnpcedm/related"><img src="http://i.imgur.com/9itPl2b.png" alt=""></a>
-                                        <br>
-                                        <a class="link" href="https://gist.github.com/swordling/2c24942de5a8d801790b/raw/ea544d4aa39f791dc6ca8205fbc4861e3028f920/dubx.user.js">User.JS Extension</a>
-                                    </div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CEx1MDcL_yw" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="contentOption">
-                 <div class="top">
-                    <div class="context">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="contextContent">
-                                    <h1>Options</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="context">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="contextContent">
-                                    <p>Our extensions offers a lot of options and addons for Dubtrack:</p>
-                                    <ul>
-                                        <li>Autovote: Automatically clicks the like button when the song advances</li>
-                                        <li>Fullscreen: Covers the area of the window with the video and the chat.</li>
-                                        <li>Work Mode: Hides the chat and the video for use in the work place.</li>
-                                        <li>Split Chat: Differentiates the color of the incoming chat to make it easier to view.</li>
-                                        <li>Bug Report: Will open a dalouge to send a bug report to our Slack.</li>
-                                        <li>Feature Request: Will open a dialouge to send a feature request to our Slack.</li>
-                                        <li>Custom CSS: Will open a dialouge to store a custom CSS file.</li>
-                                        <li>We have a lot of upcoming options now that we have recieved the Dubtrack API.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contentSupport">
-                 <div class="top">
-                    <div class="context">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="contextContent">
-                                    <h1>Change log</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="context">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="contextContent">
-                                    <ul>
-                                        <li>0.0.01: Introduced a new and better UI.</li>
-                                        <li>0.0.01: Fixed Firefox Support.</li>
-                                    </ul>
+                                    <p>We are not accepting donations at the moment, however we will be in the future. If you would like to support us please consider it.</p>
                                 </div>
                             </div>
                         </div>
@@ -368,13 +303,27 @@
                 </div>
             </div>
         </div>
-        
         <div class="us">
             <div class="usReserved">&copy; Dubx. All rights reserved.</div>
             <div class="usPartner">We love <span><img src="http://i.imgur.com/3I4iG0I.png" alt="" width="14px" height="14px"></span>ubtrack.</div>
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            $('.sendBeta').click(sendBeta);
+            function sendBeta() {
+                var user = $('.user').val();
+                var exl = $('.exl').val();
+                var app = user + ': ' + exl;
+                $('.sendBeta').replaceWith('<button type="submit" class="btn btn-default sendBeta" disabled>Sent</button>')
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://hooks.slack.com/services/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',
+                    data: 'payload={"username": "Incoming Beta Tester Application", "text": "' + app + '", "icon_emoji": ":notebook:"}'
+                }).done(function(msg) {
+                    console.log(msg);
+                });
+            }
+        </script>
     </body>
 </html>
